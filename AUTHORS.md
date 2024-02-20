@@ -4,9 +4,5 @@ Credits
 Project Lead
 ----------------
 
-* J <"">
+* dujm
 
-Project Contributors
-------------
-
-None.
