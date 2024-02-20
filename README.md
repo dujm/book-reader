@@ -23,7 +23,7 @@ Project Organization
     ├── data
     ├── docs
     ├── notebooks
-    │   └── `book-time-machine.ipynb`: teaching LLM to read the book "Time Machine"
+    │   └── `00-book-time-machine.ipynb`: teaching LLM to read the book "Time Machine"
     └── model
         └──cache: storing models
 
