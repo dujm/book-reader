@@ -21,7 +21,6 @@ Project Organization
     │   ├── `requirements.txt`: packages
     │   └── `token_access.py`: the file is used to store tokens (remember to add the filename in `.gitignore` file to protect your token) 
     ├── data
-    ├── docs
     ├── notebooks
     │   └── `00-book-time-machine.ipynb`: teaching LLM to read the book "Time Machine"
     └── model
