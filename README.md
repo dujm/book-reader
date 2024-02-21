@@ -1,7 +1,7 @@
 Book Reader
 ==============================
 
-Build a book reader using LLM
+Build a book reader (Q&A LLM chain)
 
 <br>
 
@@ -22,8 +22,8 @@ Project Organization
     │   └── `token_access.py`: the file is used to store tokens (remember to add the filename in `.gitignore` file to protect your token) 
     ├── data
     ├── notebooks
-    │   ├── `00-book-time-machine_flan_t5_large.ipynb`: Q&A LLM chain using `google/flan-t5-large`
-    │   └── `01-book-time-machine-llama2_7B.ipynb`: Q&A LLM chain using `llama2_7B`
+    │   ├── `00-book-time-machine_flan_t5_large.ipynb`: using `google/flan-t5-large`
+    │   └── `01-book-time-machine-llama2_7B.ipynb`: using `llama2_7B`
 
     └── model
         └──cache: storing models
