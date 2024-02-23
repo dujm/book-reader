@@ -54,7 +54,8 @@ conda activate llm
 pip install -r ./config/requirements.txt
 ```
 
-#### 4. Install jupyterlab (if you want to use it)
+#### 4. Install Jupyterlab
+ * if you want to use jupyterlab (alternatively, you can use `jupyter notebook`)
 ```bash
 conda install -c conda-forge jupyterlab
 
@@ -66,19 +67,26 @@ ipython kernel install --user --name=llm
 jupyter lab
 ```
 
-#### 5. Download Ollama (optional)
+#### 5. Set up Ollama (optional)
  * Ollama is used in `notebooks/01-book-time-machine-llama2_7B.ipynb`
+ * Below is for MacOS. Find more instructions on [Ollama](https://github.com/ollama/ollama) if you use other operating systems.
+
+##### 5.1 First-time using Ollma (for Mac users)
  * [Download file from Ollama website](https://ollama.ai/download)
-   * Open Ollama app if you use a Mac
- * Select a model from [Model library](https://github.com/ollama/ollama).
- * Here I select llama2
-
+ * Open Ollama app
+ * Select a model from [Model library](https://github.com/ollama/ollama). Here I select the `llama2` model
+ * Download the `llama2` model in the terminal
 ```sh
-# run llama2 model
-ollama run llama2
-
-# Note: when you run the model llama2 for the first time, the model is not yet downloaded. Therefore, ollama will pull the model from the Ollama website first, before it runs the model. This may take a while.
+# pull llama2 model (this may take a while)
+ollama pull llama2
 ```
+
+##### 5.2 For future use of Ollama 
+ * Open Ollama app
+
+
+#### 6. Run notebooks
+Go to `notebooks/`
 
 </details>
 
