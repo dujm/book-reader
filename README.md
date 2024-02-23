@@ -5,15 +5,20 @@ Build a book reader (Q&A LLM chain)
 
 <br>
 
-Books 
---------------------
- * Time Machine by H. G. Wells
+<details>
+  <summary> <h2> Books</h2> </summary>
+  <p> 
+  <li> Time Machine by H. G. Wells
+  </p>
+</details>
 
 <br>
 
-Project Organization
---------------------
-    .
+
+<details>
+  <summary> <h2> Project Organization</h2> </summary>
+
+
     ├── AUTHORS.md
     ├── LICENSE
     ├── README.md
@@ -24,9 +29,46 @@ Project Organization
     ├── notebooks
     │   ├── `00-book-time-machine_flan_t5_large.ipynb`: using `google/flan-t5-large`
     │   └── `01-book-time-machine-llama2_7B.ipynb`: using `llama2_7B`
-
     └── model
         └──cache: storing models
+</details>
+<br>
+
+<details>
+  <summary> <h2> How to use this repo?</h2> </summary>
+  <h4> Download the repo</h4>
+</details>
+
+-------------------
+
+#### Download the repo
+```bash
+git clone https://github.com/dujm/book-reader.git
+```
+#### Create a conda environment
+```bash
+# create an env (here I name it "llm") with a stable Python version (e.g. Python 3.8) 
+conda create -n ll python=3.11
+
+# activate env
+conda activate llm
+```
+#### Install Python packages
+```python
+pip install -r ./config/requirements.txt
+```
+
+#### Install jupyterlab (if you want to use it)
+```bash
+conda install -c conda-forge jupyterlab
+
+# add conda environment to jupyter lab
+conda install ipykernel
+ipython kernel install --user --name=llm
+
+# open jupyter lab
+jupyter lab
+```
 
 <br>
 
