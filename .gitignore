@@ -101,17 +101,18 @@ bin/
 **/model/
 
 # exclude external models from source control
-/src/external/
-**tmp.**
-**delete**
-/src/external/
-*.pdf
-*.mp4
-*.srt
+**/src/
+
+# other
 *.DS_Store
 **token_acces**
+**tmp**
+**delete**
+*.pdf
+*.mp4
+**.key
 **.number
+**.ppt
+*.srt
 **.pkl
 **chromedriver
-**.key
-**.ppt
