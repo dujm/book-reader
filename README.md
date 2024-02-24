@@ -25,7 +25,8 @@ Build a book reader (Q&A LLM chain)
     ├── data
     ├── notebooks
     │   ├── `00-book-time-machine_flan_t5_large.ipynb`: using `google/flan-t5-large`
-    │   └── `01-book-time-machine-llama2_7B.ipynb`: using `llama2_7B`
+    │   ├── `01-book-time-machine-llama2_7B.ipynb`: using `llama2_7B`
+    │   └── `02-book-time-machine-mistral_7B.ipynb`: using `mistral_7B`
     └── model
         └──cache: storing models
 </details>
@@ -44,7 +45,7 @@ git clone https://github.com/dujm/book-reader.git
 #### 2. Create a conda environment
 ```bash
 # create an env (here I name it "llm") with a stable Python version (e.g. Python 3.8) 
-conda create -n ll python=3.11
+conda create -n llm python=3.8
 
 # activate env
 conda activate llm
@@ -68,17 +69,23 @@ jupyter lab
 ```
 
 #### 5. Set up Ollama (optional)
- * Ollama is used in `notebooks/01-book-time-machine-llama2_7B.ipynb`
+ * Ollama is used in 
+   * `notebooks/01-book-time-machine-llama2_7B.ipynb`
+   * `notebooks/02-book-time-machine-mistral_7B.ipynb`
  * Below is for MacOS. Find more instructions on [Ollama](https://github.com/ollama/ollama) if you use other operating systems.
 
 ##### 5.1 First-time using Ollma (for Mac users)
  * [Download file from Ollama website](https://ollama.ai/download)
  * Open Ollama app
- * Select a model from [Model library](https://github.com/ollama/ollama). Here I select the `llama2` model
- * Download the `llama2` model in the terminal
+ * Select a model from [Model library](https://github.com/ollama/ollama). 
+ * I selected`llama2` and `mistral` model. 
+ * Download them in the terminal
 ```sh
-# pull llama2 model (this may take a while)
+# pull llama2 model
 ollama pull llama2
+
+# pull mistral model
+ollama pull mistral
 ```
 
 ##### 5.2 For future use of Ollama 
